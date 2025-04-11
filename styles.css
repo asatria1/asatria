@@ -1,4 +1,82 @@
-iframe {
-    max-width: 100%;
-    border: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000; /* Black background per your request */
+    color: #fff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.vcard {
+    margin-bottom: 1.5rem;
+}
+
+.adr {
+    font-size: 1.1rem;
+}
+
+.adr a {
+    color: #007bff; /* Blue links like Asatria’s buttons */
+    text-decoration: none;
+}
+
+.adr a:hover {
+    text-decoration: underline;
+}
+
+.street-address,
+.region,
+.postal-code {
+    display: block;
+}
+
+.block {
+    margin-bottom: 1rem;
+}
+
+.copy {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    .adr {
+        font-size: 1rem;
+    }
 }
